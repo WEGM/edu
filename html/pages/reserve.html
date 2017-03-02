@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="../../css/core.css?v=20170302" />
+    <link rel="stylesheet" href="../../css/common.css?v=20170302" />
+    <link rel="stylesheet" href="../../css/pages/reserve.css?v=20170302" />
+</head>
+<body>
+	<section class="step1" id="page">
+		<section class="status">
+			<p>填写资料预约试课</p>
+			<p>提交成功！<span>我们的客服正在处理中...</span></p>
+			<p>预约成功！</p>
+		</section>
+		<ul>
+			<li>
+				<label>姓名</label>
+				<input type="text" class="username">
+			</li>
+			<li>
+				<label>性别</label>
+				<section class="sex-wrapper">
+                    <label><input name="sex" type="radio" value="1">男</label>
+                    <label><input name="sex" type="radio" value="2">女</label>
+				</section>
+			</li>
+			<li>
+				<label>生日</label>
+				<input type="text" name="datepicker" id="datetimepicker" class="form-control" placeholder="出生-年-月-日" readonly="readonly">
+			</li>
+			<li>
+				<label>手机</label>
+				<input type="text" class="tel" maxlength="11">
+			</li>
+			<li>
+				<label>学校</label>
+				<input type="text" class="school" placeholder="（选填）">
+			</li>
+			<li class="reserve-time">
+				<label>约定的上课时间为：</label>
+				<h5 class="time-wrapper"><p></p></h5>
+			</li>
+			<li class="ex-study">
+				<span>是否上过英语培训课程？</span>
+				<input name="study" type="checkbox" value="0">
+			</li>
+		</ul>
+		<p class="submit-wrapper"><a href="#" class="btn-rule none">预约试课规则说明</a></p>
+		<p class="submit-wrapper"><a href="#" class="btn-submit">提交</a></p>
+	</section>
+	<section class="popup none" id="pop-explain">
+		<section class="content">
+			<a href="javascript:void(0);" class="btn-close"><img src="../../images/close.png"></a>
+			<h1>预约规则说明</h1>
+			<p></p>
+		</section>
+	</section>
+
+	<script src="../../js/config.js?v=20170302"></script>
+    <script src="http://edu.holdfun.cn/libs/zepto.min.js?v=20170302"></script>
+    <script src="http://edu.holdfun.cn/libs/util.js?v=20170302" type="text/javascript"></script>
+    <script src="../../js/plugins/common.js?v=20170302"></script>
+    
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=20170302" type="text/javascript"></script>
+    <!-- <script src="../../js/authorize_userinfo.js?v=20170302"></script> -->
+    <script src="../../js/authorize_userinfo_bird.js?v=20170302"></script>
+
+    <script src="http://edu.holdfun.cn/libs/jssdk.js?v=20170302"></script>
+    <script src="../../js/app/reserve.js?v=20170302"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=58902940" charset="UTF-8"></script>
+</body>
+</html>

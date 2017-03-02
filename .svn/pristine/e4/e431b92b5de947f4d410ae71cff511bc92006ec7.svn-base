@@ -1,0 +1,135 @@
+html,
+body {
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #EFEFF4;
+}
+.main {
+    padding:0px 20px;
+}
+section h1
+{
+    margin:30px 0px;
+    text-align: center;
+    color:#4A90E2;
+}
+.infor-box {
+    position: relative;
+    background: #4A90E2;
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.end .infor-box {
+    background: #A2A2A2;
+}
+.infor-box .teacher-infor {
+    position: relative;
+    float: left;
+}
+
+// .end {
+//      -webkit-filter: grayscale(80%);    /* webkit内核支持程度较好 */  
+//     -moz-filter: grayscale(80%);     //其他内核现在并不支持，为了将来兼容性书写   
+//      -ms-filter: grayscale(80%);  
+//       -o-filter: grayscale(80%);  
+//          filter: grayscale(80%);    /* 标准写法 */  
+// }
+
+.infor-box .course-infor {
+    position: relative;
+    margin-left: 100px;
+    height: 80px;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 18px;
+    font-size: 20px;
+}
+.infor-box .course-infor .class_time {
+    font-size: 17px;
+}
+.course-infor p{
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.infor-box .teacher-headimg {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.infor-box .teacher-name {
+    position: relative;
+    clear: both;
+    width: 80px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    text-align: center;
+}
+
+.infor-box .course-state {
+//     position: absolute;
+//     right: 15px;
+//     bottom: 15px;
+//    	font-size: 14px;
+//     padding: 4px 10px;
+//     border-radius: 3px;
+    border: 1px solid #FEDE4C;
+    
+}
+.a-btn {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin-left: 7px;
+    font-weight: 500;
+}
+.live {
+    border: 1px solid #ffa200;
+    color: #FFF;
+    background: #ffa200;
+}
+.lived {
+    border: 1px solid #E21010;
+    color: #FFFFFF;
+    background: #FF5F5F;
+}
+.btn-box {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 14px;
+}
+.state-during
+{
+	 background-color: #FEDE4C;
+	 color: #4A90E2;
+}
+.state-before,.state-after
+{
+	 background-color: transparent;
+	 border:1px solid #FEDE4C;
+	 color: #FEDE4C;
+}
+ul li
+{
+    margin-bottom: 15px;
+}
+.end .live {
+    display: none !important;
+}

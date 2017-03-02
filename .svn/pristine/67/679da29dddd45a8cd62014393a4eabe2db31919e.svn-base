@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="../../css/core.css?v=20170119" />
+    <link rel="stylesheet" href="../../css/common.css?v=20170119" />
+    <link rel="stylesheet" href="../../css/pages/review.css?v=20170119" />
+</head>
+<body>
+    <section id="re-index">
+        <h2>课后复习</h2>
+        <p>选择要复习的课程</p>
+        <section class="subject"></section>
+    </section>
+
+    <script src="../../js/config.js?v=20170119"></script>
+    <script src="http://edu.holdfun.cn/libs/zepto.min.js?v=20170119"></script>
+    <script src="http://edu.holdfun.cn/libs/util.js?v=20170119" type="text/javascript"></script>
+    <script src="../../js/plugins/common.js?v=20170119"></script>
+
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=20170119" type="text/javascript"></script>
+    <script src="../../js/authorize_userinfo_bird.js?v=20170119"></script>
+
+    <script src="http://edu.holdfun.cn/libs/jssdk.js?v=20170119"></script>
+    <script src="../../js/app/review-index.js?v=20170119"></script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=58902940" charset="UTF-8"></script>
+</body>
+</html>

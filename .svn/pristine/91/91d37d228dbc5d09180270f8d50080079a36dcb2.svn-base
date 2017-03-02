@@ -1,0 +1,275 @@
+html,
+body {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #EFEFF4;
+    overflow-y: auto;
+    font-family: Arial;
+}
+.teacher-headimg img {
+  min-width: 100%;
+  height: auto;
+}
+.infor-box {
+    position: relative;
+    background: #4A90E2;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.infor-box .teacher-infor {
+    position: relative;
+    float: left;
+}
+
+.infor-box .teacher-headimg {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.infor-box .teacher-name {
+    position: relative;
+    clear: both;
+    width: 90px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+.infor-box .course-infor {
+    position: relative;
+    margin-left: 100px;
+    height: 90px;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 18px;
+    font-size: 22px;
+}
+.infor-box .course-infor .class_time {
+    font-size: 17px;
+}
+.course-infor p{
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.infor-box .course-state {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+   	font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    
+}
+.state-during
+{
+	 background-color: #FEDE4C;
+	 color: #4A90E2;
+}
+.state-before,.state-after
+{
+	 background-color: transparent;
+	 border:1px solid #FEDE4C;
+	 color: #FEDE4C;
+}
+.time-detail
+{
+    background:#86B6EF; 
+    position: relative;
+    padding:20px 20px 5px 120px;
+    text-align: right;
+}
+.time-detail p
+{
+    margin-bottom: 10px;
+    color:#fff;
+}
+.time-detail label
+{
+    margin-right: 20px;
+}
+.main {
+    position: relative;
+    z-index: 0;
+    padding: 0px 10px;
+}
+.label-state
+{
+  padding: 10px 0;
+    font-size: 0;
+}
+.label-state span
+{
+  text-align: center;
+  display: inline-block;
+  width: 24%;
+  font-size: 12px;
+  transform: scale(.9);
+  -webkit-transform: scale(.9);
+}
+
+.label-state i
+{
+  position: relative;
+  top: 1px;
+    width:10px;
+    height: 10px;
+    margin-right: 4px;
+    display: inline-block;
+}
+i.changeState
+{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    text-align: center;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-style:normal;
+}
+.state-duty i
+{ 
+    background:#9CCF38; 
+}
+.state-absent i
+{
+    background:#EB9D9D; 
+}
+.state-later i
+{
+    background:#3ACC83; 
+}
+.state-leave i
+{
+    background:#F5A623; 
+}
+.label-time li
+{
+    position: relative;
+    box-sizing: content-box;
+    overflow: hidden;
+    display: inline-block;
+    width: 19.2%;
+    height: 100px;
+    border-radius: 10px;
+    background: #9CCF38;
+    line-height: 84px;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-right: 1%;
+    clear:both;
+    margin-top: 2px;
+}
+.label-time li:nth-child(5n)
+{
+    margin-right:0px;
+}
+.label-time ul li div p:nth-child(1) {
+  font-size: 13px;
+}
+.label-time ul li div p:nth-child(2) {
+  font-size: 12px;
+}
+li div
+{
+    position: absolute;
+    bottom:5px;
+    text-align: center;
+    color:#fff;
+    width: 100%;
+    line-height: 15px;
+    font-size: 12px;
+}
+
+li>div>p
+{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*弹层*/
+.modal{
+    position: fixed;
+    height:100%;
+    width:100%;
+    z-index:2!important;
+}
+.msgbox {
+    position: fixed;
+    z-index: 999;
+    background: rgba(248,248,248,0.9);
+    border-radius: 5px;
+    color: #333;
+    width:70%;
+    left:15%;
+}
+.msgbox-bd {
+    padding: 25px 15px;
+    text-align: center;
+}
+.msgbox-bd .msgbox-title
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tooltips{
+  width: 110px;
+  height: auto;
+  line-height: 20px;
+  padding: 10px;
+  margin-left: -25px;
+  font-weight: 400; 
+  font-style: italic;
+  font-size: 14px;
+  color: #fff;
+
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #fff;
+  background: rgba(255,255,255,0.1);
+  text-indent: 0px;
+  border-radius: 5px;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  z-index:888;
+  margin-top: -60px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+}
+.tooltips:before,
+.tooltips:after{
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  margin-left: -9px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(0,0,0,0.1);
+ /*border-top: 10px solid #fff;*/
+}

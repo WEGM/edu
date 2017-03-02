@@ -1,0 +1,59 @@
+html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+body {
+	font-size: 15px;
+	color: #333;
+	background: #f8f8f8;
+	overflow: hidden;
+	min-height: 100%;
+	height: initial;
+}
+#page {
+	position: relative;
+	width: 100%;
+	padding: 12% 6% 0;
+	font-size: 0;
+}
+.swiper-container {
+	width: 86%;
+	margin: auto;
+	overflow: visible;
+}
+.swiper-slide {
+	font-size: 0;
+}
+.swiper-slide p {
+	position: absolute;
+	width: 100%;
+	padding: 16px 0;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	color: #333;
+	font-size: 17px;
+	line-height: 20px;
+	background: rgba(255,255,255,.8);
+}
+.swiper-control .swiper-pagination-bullet-active, .swiper-control .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    background: url(../images/icon-dot.png) no-repeat transparent;
+    background-size: 100% 100%;
+}
+.btn-join {
+	display: block;
+	width: 62%;
+	margin: 30px auto;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	border-radius: 6px;
+	color: #FFF;
+	background: #d91217;
+	font-size: 15px;
+	z-index: 9;
+}

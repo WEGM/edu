@@ -1,0 +1,244 @@
+body {
+	font-size: 15px;
+	color: #4a4a4a;
+	background: #f0f0f0;
+}
+.submit-wrapper {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-left: 9%;
+}
+.time-wrapper {
+	width: 96%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-left: 11%;
+}
+#page {
+	position: relative;
+	width: 100%;
+	padding: 12% 6% 0;
+}
+#page .status {
+	text-align: center;
+	margin-bottom: 8%;
+}
+#page .status p {
+	display: none;
+	font-size: 18px;
+}
+.step1 .status p:nth-child(1), .step2 .status p:nth-child(2), .step3 .status p:nth-child(3) {
+	display: block !important;
+	font-weight: bold;
+}
+
+#page .status p:before {
+	content: '';
+	position: relative;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../../images/tip.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: middle;
+	top: -2px;
+	margin-right: 8px;
+}
+
+#page .status p:nth-child(1) {
+}
+#page .status p:nth-child(2) {
+	margin-bottom: 13%;
+}
+#page .status p:nth-child(3) {
+	margin-bottom: 13%;
+}
+#page .status p:nth-child(2) span {
+	display: block;
+	margin-top: 13px;
+}
+
+#page li {
+	width: 90%;
+	margin: 0 auto 7px;
+	height: 38px;
+	line-height: 38px;
+}
+#page li > label {
+	display: inline-block;
+	width: 12%;
+	height: 38px;
+	line-height: 38px;
+	text-align: left;
+	vertical-align: middle;
+}
+#page li .sex-wrapper label {
+	position: relative;
+	vertical-align: middle;
+	margin-right: 6px;
+	top: -5px;
+}
+#page li > input, #page li .sex-wrapper {
+	display: inline-block;
+	padding: 0 10px;
+	height: 36px;
+	line-height: 36px;
+	width: 85%;
+	vertical-align: middle;
+	background: #FFF;
+	border-radius: 5px;
+	color: #4a4a4a;
+    text-align: center;
+}
+#page li .sex-wrapper {
+	background: transparent;
+	text-align: center;
+}
+#page li .sex-wrapper label:first-child {
+	margin-right: 25%;
+}
+#page li .sex-wrapper input {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    background: url(../../images/check.png) top center;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+#page li .sex-wrapper input:checked {
+    background: url(../../images/checked.png) top center;
+    background-size:100% 100%;
+}
+
+#page .btn-rule {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	margin: 8% auto 0;
+	color: #4a4a4a;
+	text-decoration: underline;
+}
+#page .btn-submit {
+	display: block;
+	width: 66%;
+	margin: 20px auto 0;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #FFF;
+	background: #008fd0;
+}
+
+.step3 .btn-rule, .step1 li:nth-child(6), .step2 li:nth-child(5), .step2 li:nth-child(6), .step3 li:nth-child(5), .step2 .btn-submit, .step3 .btn-submit {
+	display: none !important;
+}
+.step2 li input, .step2 li select, .step2 li .birth-box, .step3 li input, .step3 li select, .step3 li .birth-box {
+	color: #555 !important;
+    // background-color: #FFF !important;
+}
+
+.step1 .ex-study {
+	display: block !important;
+}
+
+#page li.ex-study {
+	display: none;
+	text-align: left;
+}
+#page li.ex-study input {
+	position: relative;
+	float: right;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    background: url(../../images/check.png) top center;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    top: 8px;
+}
+#page li.ex-study input:checked {
+    background: url(../../images/checked.png) top center;
+    background-size:100% 100%;
+}
+#page li.reserve-time {
+	margin: 30px auto 0;
+	height: auto;
+	line-height: normal;
+}
+#page li.reserve-time label {
+	display: block;
+	width: 100%;
+}
+#page li.reserve-time p {
+	width: 100%;
+	line-height: 24px;
+	padding: 12px;
+	font-size: 17px;
+	color: #008fd0;
+	text-align: center;
+	margin: 5px auto 0;
+	background: #FFF;
+	border-radius: 5px;
+}
+
+input[type=radio], input[type=checkbox] {
+	border-radius: 0 !important;
+}
+
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.popup:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #f0f0f0;
+}
+.popup .content {
+	position: absolute;
+	top: 10%;
+	left: 7%;
+	z-index: 9;
+	color: #555;
+	width: 86%;
+	height: 80%;
+	overflow: hidden;
+	background: #FFF;
+	border-radius: 5px;
+	padding: 5%;
+	box-shadow: 0 0 8px rgba(0,0,0,.3);
+}
+.popup .content h1 {
+	width: 100%;
+	font-size: 17px;
+	border-bottom: 1px solid #a5c8f1;
+	padding: 5% 0 3%;
+	margin-bottom: 5%;
+}
+.popup .content p {
+	height: 86%;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.popup .content .btn-close {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	color: #FFF;
+	right: 6px;
+	top: 9px;
+}
